@@ -15,8 +15,6 @@ number = random.randint(1,100)
 #print(number)
 first_guess = int(input("The number in my head is between 1 and 100. Make your guess: "))
 
-end_of_game = True
-
 if first_guess > number:
   print("Too high. ")
   remaining_lives = lives - 1
@@ -28,6 +26,7 @@ elif first_guess == number:
   print("You got it right on the first try! Great job! ")
   quit()
 
+end_of_game = True
 while not end_of_game in range(1):
   following_guesses = int(input(f"You now have {remaining_lives} lives. Guess again: "))
   if following_guesses > number:
