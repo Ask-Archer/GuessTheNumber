@@ -11,7 +11,7 @@ else:
 
 print(f"You have {lives} lives to start out with.")
 
-number = random.randint(1,101)
+number = random.randint(1,100)
 #print(number)
 first_guess = int(input("The number in my head is between 1 and 100. Make your guess: "))
 
